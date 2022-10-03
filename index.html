@@ -9,10 +9,17 @@
     <body >
         <div class="prittier">
         <form action="https://formsubmit.co/464d982fda580bb770b2ca52bcbd3ca4 " method="POST">
-        Ime in Priimek:<input type="text" name="" id=""  placeholder="exmpl:blaž mislovič">
+            <!--honeypot-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!--disable captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_next" value="">
+        Ime in Priimek:<input type="text" name="name" id=""  placeholder="exmpl:blaž mislovič">
     <br>
         Kraj:<label for="City"></label>
-        <input type="text"  id="City"  list="Mesto">
+        <input type="text"  id="City" name="city" list="Mesto">
         <datalist id="Mesto">
             <option value="Ptuj"></option>
             <option value="Maribor"></option>
@@ -26,7 +33,7 @@
         </datalist>
        
       <form action="" method="">
-        <br>Email:<input type="email"><br>
+        <br>Email:<input type="email" name="email"><br>
        
         Tip vozil: <label for="cars"></label>
         <select name="cars" id="cars">
@@ -69,7 +76,7 @@
             
         </datalist>
       
-   <br><br>Želje:<br><textarea name="" id="" cols="60" rows="10"></textarea>
+   <br><br>Želje:<br><textarea name="Želje" id="" cols="60" rows="10"></textarea>
 
       <input type="submit"  value="Pošlji">
 </form>
