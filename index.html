@@ -6,9 +6,11 @@
     <title>Moja spletna stran</title>
     <link rel="stylesheet" href="style.css" />
     <head></head>
-    <body >
+    <body>
+
         <div class="prittier">
-        <form action="https://formsubmit.co/464d982fda580bb770b2ca52bcbd3ca4 " method="POST">
+       
+        <form action="https://formsubmit.co/464d982fda580bb770b2ca52bcbd3ca4 " method="POST"  class="media">
             <!--honeypot-->
             <input type="text" name="_honey" style="display: none;">
 
@@ -33,7 +35,7 @@
         </datalist>
        
       <form action="" method="">
-        <br>Email:<input type="email" name="email"><br>
+        <br>Email:<input type="email" name="email" placeholder="exmp:aleks.orešek@gmail.com"><br>
        
         Tip vozil: <label for="cars"></label>
         <select name="cars" id="cars">
@@ -75,11 +77,14 @@
         </select>
             
         </datalist>
-      
-   <br><br>Želje:<br><textarea name="Želje" id="" cols="60" rows="10"></textarea>
-
+      <div class="zelje">
+   <br><br>Želje:<br><textarea name="Želje" id="" cols="52" rows="10"></textarea>
+</div>
+<div class="pošlji">
       <input type="submit"  value="Pošlji">
+    </div>
 </form>
+
     </div>
     </body>
 </html>
